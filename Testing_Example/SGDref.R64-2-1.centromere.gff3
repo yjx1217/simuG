@@ -1,0 +1,16 @@
+chrI	SGD	centromere	151465	151582	.	+	.	ID=CEN1;Name=CEN1;gene=CEN1;Alias=CEN1;Note=Chromosome%20I%20centromere;display=Chromosome%20I%20centromere;dbxref=SGD:S000006463
+chrII	SGD	centromere	238207	238323	.	+	.	ID=CEN2;Name=CEN2;gene=CEN2;Alias=CEN2;Note=Chromosome%20II%20centromere;display=Chromosome%20II%20centromere;dbxref=SGD:S000006464
+chrIII	SGD	centromere	114385	114501	.	+	.	ID=CEN3;Name=CEN3;gene=CEN3;Alias=CEN3;Note=Chromosome%20III%20centromere;display=Chromosome%20III%20centromere;dbxref=SGD:S000006465
+chrIV	SGD	centromere	449711	449821	.	+	.	ID=CEN4;Name=CEN4;gene=CEN4;Alias=CEN4;Note=Chromosome%20IV%20centromere;display=Chromosome%20IV%20centromere;dbxref=SGD:S000006466
+chrV	SGD	centromere	151987	152104	.	+	.	ID=CEN5;Name=CEN5;gene=CEN5;Alias=CEN5;Note=Chromosome%20V%20centromere;display=Chromosome%20V%20centromere;dbxref=SGD:S000006467
+chrVI	SGD	centromere	148510	148627	.	+	.	ID=CEN6;Name=CEN6;gene=CEN6;Alias=CEN6;Note=Chromosome%20VI%20centromere;display=Chromosome%20VI%20centromere;dbxref=SGD:S000001896
+chrVII	SGD	centromere	496920	497038	.	-	.	ID=CEN7;Name=CEN7;gene=CEN7;Alias=CEN7;Note=Chromosome%20VII%20centromere;display=Chromosome%20VII%20centromere;dbxref=SGD:S000006468
+chrVIII	SGD	centromere	105586	105703	.	-	.	ID=CEN8;Name=CEN8;gene=CEN8;Alias=CEN8;Note=Chromosome%20VIII%20centromere;display=Chromosome%20VIII%20centromere;dbxref=SGD:S000006469
+chrIX	SGD	centromere	355629	355745	.	+	.	ID=CEN9;Name=CEN9;gene=CEN9;Alias=CEN9;Note=Chromosome%20IX%20centromere;display=Chromosome%20IX%20centromere;dbxref=SGD:S000006470
+chrX	SGD	centromere	436307	436425	.	-	.	ID=CEN10;Name=CEN10;gene=CEN10;Alias=CEN10;Note=Chromosome%20X%20centromere;display=Chromosome%20X%20centromere;dbxref=SGD:S000006471
+chrXI	SGD	centromere	440129	440246	.	-	.	ID=CEN11;Name=CEN11;gene=CEN11;Alias=CEN11;Note=Chromosome%20XI%20centromere;display=Chromosome%20XI%20centromere;dbxref=SGD:S000006472
+chrXII	SGD	centromere	150828	150947	.	-	.	ID=CEN12;Name=CEN12;gene=CEN12;Alias=CEN12;Note=Chromosome%20XII%20centromere;display=Chromosome%20XII%20centromere;dbxref=SGD:S000006473
+chrXIII	SGD	centromere	268031	268149	.	+	.	ID=CEN13;Name=CEN13;gene=CEN13;Alias=CEN13;Note=Chromosome%20XIII%20centromere;display=Chromosome%20XIII%20centromere;dbxref=SGD:S000006474
+chrXIV	SGD	centromere	628758	628875	.	+	.	ID=CEN14;Name=CEN14;gene=CEN14;Alias=CEN14;Note=Chromosome%20XIV%20centromere;display=Chromosome%20XIV%20centromere;dbxref=SGD:S000006475
+chrXV	SGD	centromere	326584	326702	.	-	.	ID=CEN15;Name=CEN15;gene=CEN15;Alias=CEN15;Note=Chromosome%20XV%20centromere;display=Chromosome%20XV%20centromere;dbxref=SGD:S000006476
+chrXVI	SGD	centromere	555957	556073	.	+	.	ID=CEN16;Name=CEN16;gene=CEN16;Alias=CEN16;Note=Chromosome%20XVI%20centromere;display=Chromosome%20XVI%20centromere;dbxref=SGD:S000006477
