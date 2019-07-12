@@ -8,7 +8,7 @@ use Pod::Usage qw(pod2usage);
 #  script: vcf2model.pl
 #  author: Jia-Xing Yue (GitHub ID: yjx1217)
 #  version: 1.0.0
-#  last edited: 2019.04.08
+#  last edited: 2019.07.12
 #  description: vcf2model.pl will characterize mutational profile for SNPs and INDELs
 #               based on user-provided vcf file.
 ##############################################################
@@ -141,7 +141,11 @@ foreach my $ref_allele (@base) {
   foreach my $alt_allele (@base) {
 	  if ($ref_allele ne $alt_allele) {
 	    if ($total_snp_count > 0) {
-		    $snp{$ref_allele}{$alt_allele}{'freq'} = $snp{$ref_allele}{$alt_allele}{'count'}/$total_snp_count;
+		    if (not exists $snp{$ref_allele}{$alt_allele}{'count'}) {
+		      $snp{$ref_allele}{$alt_allele}{'freq'} = 0;
+		    } else {
+		      $snp{$ref_allele}{$alt_allele}{'freq'} = $snp{$ref_allele}{$alt_allele}{'count'}/$total_snp_count;
+		    }
 		    print $snp_model_output_fh "$ref_allele->$alt_allele\t$snp{$ref_allele}{$alt_allele}{'freq'}\n";
 	    } else {
 		    print "!!! Warning! total_snp_count = 0! Set the frequency of $ref_allele->$alt_allele substitution as NA!\n";
