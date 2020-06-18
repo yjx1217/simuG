@@ -745,7 +745,7 @@ sub parse_fasta_file {
       next;
     } elsif (/^\s*#/) {
       next;
-    } elsif (/^>(.*)/) {
+    } elsif (/^>(\S+)/) {
       $seq_name = $1;
       push @$input_arrayref, $seq_name;
       $$input_hashref{$seq_name} = "";
