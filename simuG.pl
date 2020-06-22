@@ -10,7 +10,7 @@ use List::Util qw(sum min max shuffle);
 #  script: simuG.pl
 #  author: Jia-Xing Yue (GitHub ID: yjx1217)
 #  version: 1.0.0
-#  last edited: 2018.04.24
+#  last edited: 2020.06.22
 #  description: simuG.pl can simulate genome sequences with pre-defined or random genomic variants of full spectrum (e.g. SNP, INDEL, CNV, inversions, and translocations).
 ##############################################################
 
@@ -4086,7 +4086,7 @@ sub generate_output_files {
             my $variant_id = $$ref2sim_map_hashref{$ref_chr}{$ref_start}{'variant_id'};
             if ($variant_type eq "DEL") {
               print $output_ref2sim_cnv_vcf_fh "$ref_chr\t$ref_start\t.\t";
-              print $output_ref2sim_cnv_vcf_fh "$ref_allele\t$sim_allele\t.\t\tSVTYPE=DEL;EVENT=$variant_id;END=$ref_end\n";
+              print $output_ref2sim_cnv_vcf_fh "$ref_allele\t$sim_allele\t.\t.\tSVTYPE=DEL;EVENT=$variant_id;END=$ref_end\n";
             } else {
               my $donor_chr_in_ref = $$ref2sim_map_hashref{$ref_chr}{$ref_start}{'donor_chr_in_ref'};
               my $donor_start_in_ref = $$ref2sim_map_hashref{$ref_chr}{$ref_start}{'donor_start_in_ref'};
