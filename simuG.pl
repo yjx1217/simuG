@@ -938,7 +938,8 @@ sub parse_gff_file {
 		my ($mRNA_id, $gene_id) = ($attributes =~ /ID=([^;]+);\S*Parent=([^;]+)/);
 		$gff{$mRNA_id}{'parent'} = $gene_id;
 	    }
-	} elsif ($type eq 'exon') {
+	} 
+	if ($type eq 'exon') {
 	    my ($mRNA_id) = ($attributes =~ /Parent=([^;]+)/);
 	    my $exon_index = $start;
 	    $gff{$mRNA_id}{'exon'}{$exon_index}{'chr'} = $chr;
