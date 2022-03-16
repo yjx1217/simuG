@@ -4274,7 +4274,7 @@ Specify the exponent factor alpha for power-law-fitted indel size distribution: 
 
 =item B<-indel_size_powerlaw_constant>
 
-Specify the exponent factor alpha for power-law-fitted indel size distribution: p = C * (size) ** (-alpha) for size >= 1 & size <= 50. Default = 0.5. Example: -indel_size_powerlaw_constant 0.5.
+Specify the constant (C) for power-law-fitted indel size distribution: p = C * (size) ** (-alpha) for size >= 1 & size <= 50. Default = 0.5. Example: -indel_size_powerlaw_constant 0.5.
 
 =item B<-cnv_vcf>
 
