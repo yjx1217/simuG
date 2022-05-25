@@ -982,6 +982,11 @@ sub analyze_coding_partition {
 	    my $gene_end = $$gene_gff_hashref{$gene_id}{'end'};
 	    my $gene_strand = $$gene_gff_hashref{$gene_id}{'strand'};
 	    my %mRNA_length = ();
+	    # print "gene_id=$gene_id\n";
+	    if (not exists $$gene_gff_hashref{$gene_id}{'mRNA'}) {
+		# skip unexpected cases such as ENSG00000188403 that lacks the mRNA track in Ensembl's GFF3 file
+		next;
+	    }
 	    foreach my $mRNA_id (sort keys %{$$gene_gff_hashref{$gene_id}{'mRNA'}}) {
 		my $mRNA_length = $$gene_gff_hashref{$gene_id}{'mRNA'}{$mRNA_id}{'end'} - $$gene_gff_hashref{$gene_id}{'mRNA'}{$mRNA_id}{'start'} + 1;
 		$mRNA_length{$mRNA_id} = $mRNA_length;
