@@ -338,13 +338,13 @@ Options:
 
     -indel_size_powerlaw_alpha
             Specify the exponent factor alpha for power-law-fitted indel
-            size distribution: p = C * (size) ** (alpha) for size >= 1 &
+            size distribution: p = C * (size) ** (-alpha) for size >= 1 &
             size <= 50. Default = 2.0. Example: -indel_size_powerlaw_alpha
             2.0.
 
     -indel_size_powerlaw_constant
             Specify the exponent factor constant (C) for power-law-fitted indel
-            size distribution: p = C * (size) ** (alpha) for size >= 1 &
+            size distribution: p = C * (size) ** (-alpha) for size >= 1 &
             size <= 50. Default = 0.5. Example:
             -indel_size_powerlaw_constant 0.5.
 
