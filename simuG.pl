@@ -1516,23 +1516,23 @@ sub introduce_random_snp {
 			goto SAMPLE_RANDOM_SNP;
 		    }
 		} else {
-		    if ((defined $indel_count) and ($indel_count > 0)) {
-			foreach my $s (sort {$a <=> $b} keys %{$$ref2sim_map_hashref{$ref_chr}}) {
-			    my $e = $$ref2sim_map_hashref{$ref_chr}{$s}{'ref_end'};
-			    if ($ref_end < $s - $indel_max_radius - 1) {
-				last;
-			    } elsif ($ref_start >= $e + $indel_max_radius + 1) {
-				next;
-			    } else {
-				if ($$ref2sim_map_hashref{$ref_chr}{$s}{'variant_type'} =~ /INDEL/) {
-				    $check_overlap_flag = check_overlap_region($ref_start, $ref_end, $$ref2sim_map_hashref{$ref_chr}{$s}{'ref_start'}, $$ref2sim_map_hashref{$ref_chr}{$s}{'ref_end'});
-				    if ($check_overlap_flag == 1) {
-					goto SAMPLE_RANDOM_SNP;
-				    }
-				}
-			    }
-			}
-		    }
+		    # if ((defined $indel_count) and ($indel_count > 0)) {
+		    # 	foreach my $s (sort {$a <=> $b} keys %{$$ref2sim_map_hashref{$ref_chr}}) {
+		    # 	    my $e = $$ref2sim_map_hashref{$ref_chr}{$s}{'ref_end'};
+		    # 	    if ($ref_end < $s - $indel_max_radius - 1) {
+		    # 		last;
+		    # 	    } elsif ($ref_start >= $e + $indel_max_radius + 1) {
+		    # 		next;
+		    # 	    } else {
+		    # 		if ($$ref2sim_map_hashref{$ref_chr}{$s}{'variant_type'} =~ /INDEL/) {
+		    # 		    $check_overlap_flag = check_overlap_region($ref_start, $ref_end, $$ref2sim_map_hashref{$ref_chr}{$s}{'ref_start'}, $$ref2sim_map_hashref{$ref_chr}{$s}{'ref_end'});
+		    # 		    if ($check_overlap_flag == 1) {
+		    # 			goto SAMPLE_RANDOM_SNP;
+		    # 		    }
+		    # 		}
+		    # 	    }
+		    #    }
+		    # }
 		}
 	    }
 	    if ($check_overlap_flag == 0) {
